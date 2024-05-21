@@ -1,0 +1,42 @@
+.td-cell {
+  position: relative;
+  width: fit-content;
+  // opacity: 0.5;
+  // color: #ccc;
+}
+
+.update-icon {
+  position: absolute;
+  margin: auto;
+  // background-color: #eee;
+  // opacity: 0.5;
+  width: 100%;
+  flex: 1;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+  // svg {
+  //   opacity: 1;
+
+  // }
+}
+
+.table-head-input {
+  border: none;
+  position: absolute;
+  // margin: auto;
+  // background-color: #eee;
+  // opacity: 0.5;
+  width: 100%;
+  flex: 1;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: left;
+  padding-left: 10px;
+  font-size: large;
+
+}

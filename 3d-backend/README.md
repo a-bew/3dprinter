@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/66923945/detaching-volumes-for-a-fresh-restart-when-shutting-down-docker

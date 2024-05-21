@@ -1,0 +1,44 @@
+/* globals.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+}
+
+th,
+td {
+  // flex: 1;
+  padding: 8px;
+  text-align: left;
+  // width: 15%;
+}
+
+tr {
+  width: 100%;
+}
+
+th {
+  background-color: #f2f2f2;
+}

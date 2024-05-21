@@ -1,0 +1,41 @@
+.table-container {
+    width: 100%;
+}
+
+
+// /* DynamicTable.module.css */
+// .clickable-row {
+//     cursor: pointer;
+// }
+
+// .expanded-row {
+//     display: none;
+// }
+
+// @media (max-width: 768px) {
+//     .table {
+//         font-size: 14px;
+//     }
+
+//     .clickable-row {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         align-items: center;
+//         border-bottom: 1px solid #ddd;
+//         padding: 8px;
+//     }
+
+//     .clickable-row td:first-child {
+//         flex: 1;
+//     }
+
+//     .clickable-row td:nth-child(2),
+//     .clickable-row td:nth-child(3) {
+//         display: none;
+//     }
+
+//     .expanded-row {
+//         display: table-row;
+//     }
+// }
