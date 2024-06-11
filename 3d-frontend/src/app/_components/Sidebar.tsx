@@ -2,7 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Sidebar.scss';
 import Link from 'next/link';
-
+import { usePathname } from 'next/navigation';
+// 
 const Sidebar = () => {
 
     const [collapsed, setCollapsed] = useState(false);
@@ -38,7 +39,12 @@ const Sidebar = () => {
     const handleSearchFocus = () => {
         setCollapsed(false);
     };
+    // router.push('/dashboard/overview')
 
+    const pathname = usePathname()
+
+    const tab = pathname.split('/').pop()
+    
     return (
         <div className={`container ${collapsed ? 'collapsed' : ''}`}>
 
@@ -74,7 +80,7 @@ const Sidebar = () => {
                 <div className="sidebar-links">
                     <ul>
                         <li>
-                            <Link href="#dashboard" title="Dashboard" className={`tooltip ${activeIndex === 0 ? 'active' : ''}`} onClick={handleClick}
+                            <Link href="/dashboard/overview" title="Overview" className={`tooltip ${activeIndex === 0 ? 'active' : ''} ${tab === 'overview' ? 'active' : ''}`} 
                                 ref={element => {
                                     if (element) {
                                         allLinksRef.current.push(element);
@@ -91,18 +97,19 @@ const Sidebar = () => {
                                     <path d="M14 12h6v8h-6z" />
                                     <path d="M14 4h6v4h-6z" />
                                 </svg>
-                                <span className="link hide">Dashboard</span>
-                                <span className="tooltip__content">Dashboard</span>
+                                <span className="link hide">Overview</span>
+                                <span className="tooltip__content">Overview</span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="#market-overview" className="tooltip"
+                            <Link href="/dashboard/create-table" className={`tooltip ${tab === 'create-table' ? 'active' : ''}`}
                                 ref={element => {
                                     if (element) {
                                         allLinksRef.current.push(element);
                                     }
                                 }}
                             >
+                                
                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chart-bar" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                                     stroke-linejoin="round" aria-hidden="true">
@@ -112,8 +119,8 @@ const Sidebar = () => {
                                     <path d="M15 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
                                     <path d="M4 20l14 0" />
                                 </svg>
-                                <span className="link hide">Market Overview</span>
-                                <span className="tooltip__content">Market Overview</span>
+                                <span className="link hide">Create Table</span>
+                                <span className="tooltip__content">Create Table</span>
                             </Link>
                         </li>
                         <li>

@@ -1,0 +1,110 @@
+
+
+.top-line {
+  border-top: 1px solid #ddd;
+}
+
+
+/**
+*  Button
+*/
+
+/**
+*   For Mobile View
+*/
+
+
+.tag-tagtable-inputGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px 0px 10px 0px;
+
+  &:first-child{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &:last-child{
+    padding-bottom: 20px;
+  }
+}
+
+.tag-tagtable-label {
+  width: 150px;
+  text-align: left;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.tag-tagtable-input {
+  width: 70%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+
+/**
+* 
+*/ 
+
+.tag-tagtable-container {
+  max-width: 100%;
+}
+
+.tag-tagtable-header {
+  box-sizing: border-box;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.tag-tagtable-header-main{
+  display: flex;
+  justify-content: space-between;
+  height:100%;
+  flex:1;
+  flex-direction: column;
+}
+
+
+.tag-tagtable-header-icons-container {
+  display: flex;
+  gap: 3px;
+  width: 10%;
+  align-items: flex-start;
+    padding: 10px;
+}
+
+.tag-tagtable-header-content{
+  display: flex;
+  flex-direction: row;
+   gap: 10px;
+   height: 100%;
+}
+
+.tag-tagtable-header-checkbox {
+  width: px;
+  text-align: left;
+  padding: 5px;  
+}
+
+.tag-tagtable-body-content {
+  /* Rectangle 14 */
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  padding-left: 1rem;
+  border-radius: 0px;
+}
+
+
+

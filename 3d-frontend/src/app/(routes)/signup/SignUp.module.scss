@@ -1,0 +1,88 @@
+// TaskListPro.module.scss
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+gap: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  
+  .inputContainer {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  .continueWithEmail {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .or {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .continueWithGoogle,
+  .continueWithApple {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .continueWithGoogle {
+    background-color: #db4437;
+  }
+  
+  .continueWithApple {
+    background-color: #000;
+  }
+  
+  .signIn {
+    font-size: 1rem;
+  }
+  
+  .link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }

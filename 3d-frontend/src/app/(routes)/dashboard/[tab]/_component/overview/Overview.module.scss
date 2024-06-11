@@ -1,0 +1,145 @@
+
+$font-body: 'Inter', sans-serif;
+$thin-line-color: #ddd;
+$h5-size: 1rem;
+
+.message-list {
+    flex: 1;
+    width: 100%;
+    border-right: $thin-line-color solid 1px;
+    // width: 280px; 
+    flex-shrink: 0;
+    position: relative;
+    /* Chrome-specific CSS */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        /* Chrome CSS rules here */
+        // width: 260px; 
+    }
+
+    /* Safari-specific CSS */
+    @media not all and (min-resolution:.001dpcm) {
+        /* Safari CSS rules here */
+        // width: 300px; 
+
+    }
+    
+    
+    @media screen and (max-width: 800px) {
+        &.hide{
+            display: none;
+            transition: display 0.3s ease; /* Add animation to the flex property */
+        }
+
+        &.listOnly{
+            // width: 100%;
+            flex:1;
+        }
+    }    
+}
+//   
+/* Mobile-first styling */
+  
+
+.title{
+    // padding: 0px 0px 0px 15px;
+
+    font-style: normal;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    color: #000;
+    font-family: $font-body;
+    // font-weight: 500;
+    font-size: $h5-size;
+}
+
+.header{
+    padding: 0px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.subtitle{
+    margin-top: -5px;
+}
+
+.doughnut-chart-area{
+    padding: 0 0 0 15px;   
+    display: flex;
+    // flex-direction: column;
+    gap: 10px;
+    // justify-content: center;
+    // align-items: center;
+    box-sizing: border-box;
+}
+
+.doughnut-chart{
+    padding-top: 30px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 5px;
+
+    .number-of-accounts{
+        font-size: 10px;
+        font-weight: 600;
+
+    }
+
+}
+
+.current-balance{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .label{
+        font-size: 10px;
+
+    }
+
+    .amount{
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+
+.message-label-items {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+
+    // Mobile
+    touch-action: pan-y;  // to allow vertical scrolling touch gestures.
+    -webkit-overflow-scrolling: touch;  // to enable momentum based scrolling on iOS.
+
+    // Desktop
+    -ms-overflow-style: none;
+    overscroll-behavior-y: contain; // to prevent the scroll position from skipping around.
+    scrollbar-width: thin; scrollbar-color: #ccc #ddd; 
+}
+
+.message-label-items:hover {
+    overflow-y: scroll;
+}
+
+  
+.message-label-items:active::-webkit-scrollbar-thumb,
+.message-label-items:focus::-webkit-scrollbar-thumb,
+.message-label-items:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+.message-label-items::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    visibility: hidden;
+}
+
+.message-label-items::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+}

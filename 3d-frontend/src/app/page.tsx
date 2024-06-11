@@ -1,7 +1,7 @@
 // SomeOtherComponent.tsx
 
 import React from 'react';
-import DynamicTable from './components/DynamicTable';
+import DynamicTable from './_components/DynamicTable';
 
 const Home: React.FC = () => {
   const products = [
